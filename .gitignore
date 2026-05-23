@@ -1,9 +1,16 @@
+# Dependencies
 node_modules/
-venv/
-__pycache__/
-*.pyc
-student.db
-db.sqlite3
-.env
+.pnp
+.pnp.js
+
+# Production / Builds
 dist/
 build/
+
+# Local databases & caches
+backend/db.sqlite3
+__pycache__/
+*.pyc
+.env
+.DS_Store
+.vite

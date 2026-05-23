@@ -1,15 +1,16 @@
 import {
-FaHome,
-FaClipboardCheck,
 FaChartLine,
-FaChartBar,
-FaUserShield,
-FaCog
+FaCalendarAlt,
+FaFileAlt,
+FaHeartbeat,
+FaGraduationCap,
+FaArrowTrendUp
 }
-from 'react-icons/fa'
+
+from "react-icons/fa6"
 
 import { Link }
-from 'react-router-dom'
+from "react-router-dom"
 
 function Sidebar(){
 
@@ -18,10 +19,10 @@ const item=
 flex
 items-center
 gap-4
-px-5
+px-6
 py-4
 rounded-2xl
-hover:bg-blue-50
+hover:bg-gray-100
 `
 
 return(
@@ -34,21 +35,61 @@ w-[260px]
 h-screen
 bg-white
 border-r
-p-8
-z-50
+flex
+flex-col
+justify-between
 ">
+
+<div>
+
+<div className="
+p-8
+border-b
+flex
+gap-4
+items-center
+">
+
+<div className="
+w-14
+h-14
+bg-black
+rounded-2xl
+text-white
+flex
+justify-center
+items-center
+">
+
+<FaGraduationCap/>
+
+</div>
+
+<div>
 
 <h1 className="
-text-6xl
 font-bold
-mb-12
+text-xl
 ">
 
-StudentAI
+EduPredict
 
 </h1>
 
+<p className="
+text-gray-500
+">
+
+Student portal
+
+</p>
+
+</div>
+
+</div>
+
 <div className="
+p-6
 space-y-3
 ">
 
@@ -57,31 +98,9 @@ to="/dashboard"
 className={item}
 >
 
-<FaHome/>
+<FaTableCellsLarge/>
 
-Overview
-
-</Link>
-
-<Link
-to="/attendance"
-className={item}
->
-
-<FaClipboardCheck/>
-
-Attendance
-
-</Link>
-
-<Link
-to="/cgpa"
-className={item}
->
-
-<FaChartLine/>
-
-CGPA
+Dashboard
 
 </Link>
 
@@ -90,30 +109,75 @@ to="/analytics"
 className={item}
 >
 
-<FaChartBar/>
+<FaChartLine/>
 
 Analytics
 
 </Link>
 
 <Link
-to="/admin"
+to="/attendance"
 className={item}
 >
 
-<FaUserShield/>
+<FaCalendarAlt/>
 
-Admin
+Leaves
+
+</Link>
+
+<Link
+className={item}
+>
+
+<FaFileAlt/>
+
+Reports
 
 </Link>
 
-<Link className={item}>
+</div>
 
-<FaCog/>
+</div>
 
-Settings
+<div className="
+p-6
+border-t
+">
 
-</Link>
+<p className="
+font-semibold
+">
+
+Kevin
+
+</p>
+
+<p className="
+text-gray-500
+mb-5
+">
+
+Computer Science · Sem 1
+
+</p>
+
+<button className="
+w-full
+border
+rounded-2xl
+p-4
+flex
+items-center
+gap-4
+justify-center
+">
+
+<FaArrowRightFromBracket/>
+
+Sign out
+
+</button>
 
 </div>
 
