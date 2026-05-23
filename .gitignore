@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production / Builds
+dist/
+build/
+
+# Local databases & caches
+backend/db.sqlite3
+__pycache__/
+*.pyc
+.env
+.DS_Store
+.vite
