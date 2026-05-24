@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/student-performance-analytics/', // 👈 Must match your exact repository name layout!
+  base: '/student-performance-analytics/',
 });
